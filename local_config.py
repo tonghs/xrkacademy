@@ -5,4 +5,4 @@ DEBUG = True
 PORT = 10010
 HOST = 'http://127.0.0.1'
 COOKIE_SECRET = 'xxx'
-APP = 'test'
+APP = '一块投吧投资学院'

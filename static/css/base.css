@@ -2,6 +2,7 @@ body {
     font-family: "SegoeUI", "PingFang SC", "Helvetica Neue", "Helvetica", "Roboto Condensed", "Microsoft Yahei", "Arial", "Verdana", "sans-serif";
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
+    margin: 0;
 }
 
 body {
@@ -23,6 +24,10 @@ a:hover {
    -moz-transition: all 0.3s ease-out;
 -webkit-transition: all 0.3s ease-out;
      -o-transition: all 0.3s ease-out;   
+}
+
+div.main{
+    margin: 10px;
 }
 
 .fn-t-align-c {

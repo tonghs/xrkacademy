@@ -6,18 +6,62 @@
         <title><%block name="title"></%block>${APP}</title>
         
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="${STATIC.css('lib/bootstrap/bootstrap.min.css')}">
         <link rel="stylesheet" href="${STATIC.css('base.css')}">
+        <link rel="stylesheet" href="${STATIC.css('bootstrap-rewrite.css')}">
 
         <%block name="css">
         </%block>
     </head>
 
     <body>
-        ${next.body()}
+        <div id="header">
+			<nav class="navbar navbar-default">
+			    <div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/">LOGO</a>
+					</div>
 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><div><a href="/">首页</a></div></li>
+							<li><div><a href="#">学院介绍</a></div></li>
+							<li><div><a href="#">课程设置</a></div></li>
+							<li><div><a href="#">师资团队</a></div></li>
+							<li><div><a href="#">报名须知</a></div></li>
+							<li><div><a href="#">联系我们</a></div></li>
+							## <li class="dropdown">
+							## 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							## 	<ul class="dropdown-menu">
+							## 	<li><a href="#">Action</a></li>
+							## 	<li><a href="#">Another action</a></li>
+							## 	<li><a href="#">Something else here</a></li>
+							## 	<li role="separator" class="divider"></li>
+							## 	<li><a href="#">Separated link</a></li>
+							## 	</ul>
+							## </li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+			    </div><!-- /.container-fluid -->
+			</nav>
+
+		</div>
+        ${next.body()}
+        <div id="footer">
+        </div>
         <script src="${STATIC.js('lib/jquery-3.1.1.js')}"></script>
-        <script src="${STATIC.js('require.js')}"></script>
         <script src="${STATIC.js('base.js')}"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="${STATIC.js('lib/bootstrap/bootstrap.min.js')}"></script>
+
         <%block name="js">
         </%block>
     </body>

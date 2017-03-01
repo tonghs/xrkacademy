@@ -25,7 +25,7 @@ gulp.task('coffee', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         notify: false,
-        proxy: 'http://localhost:10011',
+        proxy: 'http://test.xueyuan.yikuaitouba.com',
         files: css_path + "**/*.css, " + js_path + "**/*.js, template/**/*.html"
     });
 });

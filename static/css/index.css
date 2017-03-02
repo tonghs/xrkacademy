@@ -26,6 +26,44 @@ div#opinion {
     display: none;
 }
 
+
+div#teacher-wrapper {
+    margin-top: 20px;
+}
+
+div#teacher-wrapper .col-xs-3{
+    margin: 0;
+    padding: 0;
+}
+
+div#teacher-wrapper .avatar {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+div#teacher-wrapper .text{
+    margin-top: 10px;
+    text-align: center;
+}
+
+div#teacher-wrapper .text .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#teacher-wrapper .text .title{
+    display: block;
+}
+
+div#teacher-wrapper .text .title span {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -89,6 +127,44 @@ div#opinion {
         font-size: 13px;
         padding: 0 15px;
     }
+
+    div#teacher-wrapper {
+        margin-top: 120px;
+    }
+
+    div#teacher-wrapper .col-xs-3{
+        margin: 0;
+        padding: 0;
+    }
+
+    div#teacher-wrapper .avatar {
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-size: 250px;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+
+    div#teacher-wrapper .text{
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    div#teacher-wrapper .text .name {
+        font-size: 14px;
+        font-weight: bold;
+        padding-left:20px;
+    }
+
+    div#teacher-wrapper .text .title{
+        padding-left:20px;
+    }
+    div#teacher-wrapper .text .title span {
+        display: inline-flex;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -102,7 +178,7 @@ div#opinion {
     }
 
     div.opinion>div.row>div.col {
-        width: 355px;        
+        width: 390px;        
         margin: 0;
         padding: 0;
     }
@@ -112,13 +188,13 @@ div#opinion {
         background-size: cover;
         background-position: center;
         min-height: 120px;
-        width: 150px;
+        width: 170px;
         float: left;
     }
 
     #opinion .text {
         float: left;
-        width: 205px;
+        width: 210px;
         background-color: rgba(255, 255, 255, 0.8);
         min-height: 120px;
     }

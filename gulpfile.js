@@ -26,7 +26,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         notify: false,
         proxy: 'http://test.xueyuan.yikuaitouba.com',
-        files: css_path + "**/*.css, " + js_path + "**/*.js, template/**/*.html"
+        files: "static/**/*.css, static/**/*.js, template/**/*.html"
     });
 });
 

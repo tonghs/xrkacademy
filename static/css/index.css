@@ -3,33 +3,41 @@ div#banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 250px;
 }
 
 div#banner-filter {
-    height: 300px;
+    height: 250px;
     opacity: 0.7;
     background-image: linear-gradient(0deg, rgba(31,36,50,0.40) 32%, #0E1421 98%);
-    margin-top: -300px;
+    margin-top: -250px;
     color: #fff;
 }
 
 div#banner-filter>div>h2{
-    margin-top: 80px;
-    font-size: 40px;
+    margin-top: 50px;
+    font-size: 30px;
     color: #FFFFFF;
     line-height: 45px;
     font-weight: 200;
 }
 
+div#opinion {
+    display: none;
+}
+
 @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
     div#banner-filter>div>h2{
         margin-top: 100px;
-        font-size: 70px;
+        font-size: 40px;
         color: #FFFFFF;
-        line-height: 85px;
+        line-height: 60px;
         font-weight: 200;
-        letter-spacing: -2.72px;
+        letter-spacing: -2px;
     }
 
     div#banner {
@@ -40,4 +48,89 @@ div#banner-filter>div>h2{
         height: 500px;
         margin-top: -500px;
     }
+
+    div#opinion {
+        display: block;
+        margin-top: -210px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.opinion>div.row>div.col {
+        width: 250px;        
+        margin: 0;
+        padding: 0;
+    }
+
+    .col .bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 150px;
+        width: 100px;
+        float: left;
+    }
+
+    #opinion .text {
+        float: left;
+        width: 130px;
+        background-color: rgba(255, 255, 255, 0.8);
+        min-height: 150px;
+    }
+
+    #opinion .text .title {
+        font-weight: bold;
+        font-size: 15px;
+        padding: 13px 15px 0;
+        margin-bottom: 15px;
+    }
+
+    #opinion .text p {
+        font-size: 13px;
+        padding: 0 15px;
+    }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+    div#opinion {
+        display: block;
+        margin-top: -200px;
+    }
+
+    div.opinion>div.row>div.col {
+        width: 355px;        
+        margin: 0;
+        padding: 0;
+    }
+
+    .col .bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 120px;
+        width: 150px;
+        float: left;
+    }
+
+    #opinion .text {
+        float: left;
+        width: 205px;
+        background-color: rgba(255, 255, 255, 0.8);
+        min-height: 120px;
+    }
+
+    #opinion .text .title {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+
+    #opinion .text p {
+        font-size: 13px;
+    }
+}
+

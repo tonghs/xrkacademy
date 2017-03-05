@@ -105,6 +105,21 @@ div#teacher-wrapper .avatar {
     text-decoration: none;
 }
 
+.img-wrapper .img {
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-wrapper .col-md-3 {
+    padding: 0;
+}
+
+.img-wrapper {
+    margin-top: 30px;
+}
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -206,8 +221,58 @@ div#teacher-wrapper .avatar {
         display: inline-flex;
     }
 
+    .team-intro-wrapper {
+        margin-top: 50px;
+    }
+
+    div.team-intro-wrapper .container {
+        padding: 0 15px;
+    }
+
+    div.team-intro-wrapper .col-md-4 {
+        padding: 0;
+    }
+
+    div.team-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        height: 200px;
+        width: 100%;
+    }
+
+    .team-desc .title{
+        text-align: left;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 5px auto;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+
+    .team-desc .text{
+        padding: 0 15px;
+        text-align: left;
+        word-wrap:break-word;
+    }
+
     .team-desc .text .readmore {
         text-align: left;
+    }
+
+    .img-wrapper {
+        margin-top: 50px;
+    }
+
+    .img-wrapper .img {
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img-wrapper .col-md-3 {
+        padding: 0;
     }
 }
 
@@ -331,3 +396,18 @@ div#teacher-wrapper .avatar {
         text-align: left;
     }
 
+    .img-wrapper {
+        margin-top: 50px;
+    }
+
+    .img-wrapper .img {
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img-wrapper .col-md-3 {
+        padding: 0;
+    }
+}

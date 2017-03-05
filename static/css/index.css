@@ -95,6 +95,15 @@ div#teacher-wrapper .avatar {
     word-wrap:break-word;
 }
 
+.team-desc .text .readmore {
+    color: #005AEF;
+    text-align: right;
+}
+
+.team-desc .text .readmore a {
+    color: #005AEF;
+    text-decoration: none;
+}
 
 @media (min-width: 768px) {
     .container {
@@ -197,6 +206,9 @@ div#teacher-wrapper .avatar {
         display: inline-flex;
     }
 
+    .team-desc .text .readmore {
+        text-align: left;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -314,5 +326,8 @@ div#teacher-wrapper .avatar {
         text-align: left;
         word-wrap:break-word;
     }
-}
+
+    .team-desc .text .readmore {
+        text-align: left;
+    }
 

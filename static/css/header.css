@@ -1,0 +1,10 @@
+.navbar-brand img {
+    float: left;
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-brand { 
+    color: #fff;
+    font-size: 13px;
+    line-height: 27px;
+}

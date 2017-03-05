@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="${STATIC.css('lib/bootstrap/bootstrap.min.css')}">
         <link rel="stylesheet" href="${STATIC.css('base.css')}">
         <link rel="stylesheet" href="${STATIC.css('bootstrap-rewrite.css')}">
+        <link rel="stylesheet" href="${STATIC.css('header.css')}">
+        <link rel="stylesheet" href="${STATIC.css('footer.css')}">
 
         <%block name="css">
         </%block>
@@ -26,7 +28,10 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/">LOGO</a>
+                        <a class="navbar-brand" href="/">
+                            <img src="http://om579s1ws.bkt.clouddn.com/2017-03-05-logo.png" width="30"></img>
+                            一块投吧投资学院
+                        </a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,6 +61,73 @@
 		</div>
         ${next.body()}
         <div id="footer">
+            <div class="partner container">
+                <ul>
+                    <li>
+                        合作媒体：
+                    </li>
+                    <li class="item">
+                        <a href="">新浪</a>
+                    </li>
+                    <li class="item">
+                        <a href="">新浪</a>
+                    </li>
+                    <li class="item">
+                        <a href="">新浪</a>
+                    </li>
+                </ul>
+                <div class="fn-clear-f ">&nbsp;</div>
+            </div>
+            <div class="container">
+                <hr>
+            </div>
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div class="icon" style="background-image: url('http://om579s1ws.bkt.clouddn.com/xueyuanjieshao.svg');">
+                                    <a href="">学院<span class="dsk">介绍<span></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="icon" style="background-image: url('http://om579s1ws.bkt.clouddn.com/kechengshezhi.svg');">
+                                    <a href="">课程<span class="dsk">设置</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="icon" style="background-image: url('http://om579s1ws.bkt.clouddn.com/shizituandui.svg');">
+                                    <a href="">师资<span class="dsk">团队</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="icon" style="background-image: url('http://om579s1ws.bkt.clouddn.com/baomingxuzhi.svg');">
+                                    <a href="">报名<span class="dsk">须知</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="icon" style="background-image: url('http://om579s1ws.bkt.clouddn.com/lianxiwomen.svg');">
+                                    <a href="">联系<span class="dsk">我们</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>COPYRIGHT  @2017 一块投吧投资学院</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="qr-img">
+                            &nbsp;
+                        </div>
+                        <div class="phone">
+                            <p>010 - 53672297</p>
+                            <p>工作日8:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="${STATIC.js('lib/jquery-3.1.1.js')}"></script>
         <script src="${STATIC.js('base.js')}"></script>

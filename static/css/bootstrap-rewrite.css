@@ -5,6 +5,10 @@
     border-radius: 0;
 }
 
+.navbar-branda{
+    padding: 10px; 15px;
+}
+
 .navbar-default {
     background-color: #1F2532;
     border-color: #12161e;

@@ -1,0 +1,204 @@
+#footer {
+    margin-top: 0px;
+    padding-top: 30px;
+    background-color: #1F2532;
+    padding-bottom: 15px;
+}
+
+#footer .partner ul {
+    margin: 0;
+    padding: 0;
+}
+    
+#footer .partner ul li {
+    float: left;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 14px;
+    list-style: none;
+    padding-right: 15px;
+}
+
+#footer .partner ul li.item {
+    padding: 0 5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.6); 
+}
+
+#footer .partner ul li:last-child {
+    border: 0;
+}
+
+#footer .partner ul li a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#footer hr {
+    border-color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    padding: 0;
+}
+
+#footer .footer {
+    margin-top: 15px;
+}
+
+#footer .footer .icon {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 28px;
+    padding-top: 28px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    margin-bottom: 10px;
+}
+
+#footer .footer .icon a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#footer .footer .icon a .dsk{
+    display: none;
+}
+
+#footer .footer .copyright {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#footer .footer .phone{
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+#footer .footer .phone p{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 12px;
+    font-size: 12px;
+    display: inline;
+}
+
+#footer .footer .qr-img{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #footer {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    #footer .footer .icon {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 34px 29.5px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+        margin-bottom: 10px;
+    }
+
+    #footer .footer .icon a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+
+    #footer .footer {
+        margin-top: 30px;
+    }
+
+    #footer .footer .phone{
+        display: block;
+        background-image: url('http://om579s1ws.bkt.clouddn.com/icon-phone.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 57px 46px;
+        padding-top: 58px;
+        padding-bottom: 5px;
+        text-align: center;
+        float: right;
+    }
+
+    #footer .footer .phone p{
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 10px;
+        display: block;
+        font-size: 13px;
+    }
+
+    #footer .footer .qr-img{
+        display: block;
+        background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-05-qr.png);
+        background-size: 92px;
+        padding-bottom: 5px;
+        text-align: center;
+        height: 92px;
+        width: 92px;
+        float: right;
+        margin-left: 30px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #footer {
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    #footer .footer .icon {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 34px 29.5px;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+        margin-bottom: 10px;
+    }
+
+    #footer .footer .icon a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #footer .footer .icon a .dsk{
+        display: inherit;
+    }
+
+    #footer .footer .phone{
+        background-image: url('http://om579s1ws.bkt.clouddn.com/icon-phone.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 57px 46px;
+        padding-top: 58px;
+        padding-bottom: 5px;
+        text-align: center;
+        float: right;
+    }
+
+    #footer .footer .phone p{
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 10px;
+        font-size: 14px;
+        display: block;
+    }
+
+    #footer .footer .qr-img{
+        display: block;
+        background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-05-qr.png);
+        background-size: 92px;
+        padding-bottom: 5px;
+        text-align: center;
+        height: 92px;
+        width: 92px;
+        float: right;
+        margin-left: 50px;
+    }
+}

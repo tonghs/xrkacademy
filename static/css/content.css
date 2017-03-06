@@ -13,6 +13,10 @@
     padding-left: 0;
 }
 
+.right ul, .right ol {
+    padding-left: 18px;
+}
+
 .right p {
     font-size: 16px;
     color: #141414;
@@ -27,6 +31,13 @@
     letter-spacing: 0;
     font-weight: bold;
     margin: 0 0 10px;
+}
+
+.right p.sub_title {
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 0;
+    margin: -10px 0 10px;
 }
 
 .right hr {

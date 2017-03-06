@@ -21,3 +21,9 @@ class Introduction(BaseHandler):
 class Notice(BaseHandler):
     def get(self):
         self.render()
+
+
+@route('/course')
+class Course(BaseHandler):
+    def get(self):
+        self.render()

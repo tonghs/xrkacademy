@@ -1,0 +1,64 @@
+<%inherit file="base.html"/>
+<%block name="title">学院介绍 – </%block>
+<%block name="css">
+	<link rel="stylesheet" href="${STATIC.css('content.css')}">
+</%block>
+<div class="container main">
+    <div class="left">
+        <ul>
+            <li><a class="anchor" href="#course">授课安排</a></li>
+            <li><a class="anchor" href="#condition">报名条件</a></li>
+            <li><a class="anchor" href="#process">报名流程</a></li>
+            <li><a class="anchor" href="#expense">学习费用</a></li>
+            <li><a class="anchor" href="#date">报名时间</a></li>
+        </ul>
+    </div>
+    <div class="fn-clear-f"></div>
+    <div class="right">
+        <a name="course"></a>
+        <p class="title">授课安排</p>
+        <p>一块投吧投资学院的学习以集中授课为主，参访企业为辅。固定场地，采用主题模块制授课，共包括六个模块，课程跨度一年，每两个月一次，共18天课。</p>
+        <p>授课地点：中国·北京 </p>
+
+        <hr>
+
+        <a name="condition"></a>
+        <p class="title">报名条件</p>
+        <p>
+            <ul style="padding-left: 18px">
+                <li>企业规模：年收入3000万元以上</li>
+                <li>高净值人士，个人资产5000万以上</li>
+                <li>企业接班人亦可接受报名</li>
+                <li>可以占用工作日上课 周五～周日三天</li>
+            </ul>
+        </p>
+
+        <hr>
+
+        <a name="process"></a>
+        <p class="title">报名流程</p>
+        <p>
+            <ol style="padding-left: 18px">
+                <li>填写报名表，提交报名材料</li>
+                <li>缴纳学费 RMB168000元</li>
+                <li>发放录取通知书，提交入学材料</li>
+            </ol>
+        </p>
+
+        <hr>
+
+        <a name="expense"></a>
+        <p class="title">学习费用</p>
+        <p>学费 168000元/人（费用包括：学费、住宿费、教材费、教学管理费等，学员学习期间的餐饮、交通费和班级活动费自理。）</p>
+
+        <hr>
+
+        <a name="date"></a>
+        <p class="title">报名时间</p>
+        <p>2017年3月19日起</p>
+    </div>
+</div>
+
+<%block name="js">
+    <script src="${STATIC.js('content.js')}"></script>
+</%block>

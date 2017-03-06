@@ -1,7 +1,7 @@
 <%inherit file="base.html"/>
 <%block name="title">学院介绍 – </%block>
 <%block name="css">
-	<link rel="stylesheet" href="${STATIC.css('intro.css')}">
+	<link rel="stylesheet" href="${STATIC.css('content.css')}">
 </%block>
 <div class="container main">
     <div class="left">
@@ -67,11 +67,5 @@
 </div>
 
 <%block name="js">
-<script>
-    $('a.anchor').click(function(event) {
-        // 此处正则用于转换带页面URL的锚点，如 http://abc.html#div,具体正则格式据实际情况而定
-        var targetId = $(this).attr('href').replace('#','');
-        $("html, body").animate({scrollTop: $('a[name=' + targetId + ']').offset().top}, 800);
-    });
-</script>
+    <script src="${STATIC.js('content.js')}"></script>
 </%block>

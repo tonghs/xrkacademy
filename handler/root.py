@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import _env  # noqa
-import tornado.web
 from handler.base import BaseHandler, route
 
 
@@ -12,13 +11,13 @@ class Index(BaseHandler):
         self.render()
 
 
-@route('/login')
-class Login(tornado.web.RequestHandler):
-    def get(self):
-        self.render('../template/login.html')
-
-
 @route('/introduction')
 class Introduction(BaseHandler):
+    def get(self):
+        self.render()
+
+
+@route('/notice')
+class Notice(BaseHandler):
     def get(self):
         self.render()

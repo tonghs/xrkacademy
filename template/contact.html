@@ -1,0 +1,95 @@
+<%inherit file="base.html"/>
+<%block name="title">联系我们 – </%block>
+<%block name="css">
+	<link rel="stylesheet" href="${STATIC.css('contact.css')}">
+	<style type="text/css">
+		html,body{margin:0;padding:0;}
+		.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+		.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</%block>
+<div class="container main">
+    <p class="title">联系我们</p>
+    <p>2016年，向日葵传媒联合深圳卫视、青橙芒果传播共同出品大型创投类电视节目《一块投吧》。</p>
+    <p>在节目里，新东方教育集团创始人、洪泰基金联合创始人俞敏洪，北极光创投创始人、董事总经理邓锋，紫牛基金合伙人张泉灵，洪泰基金创始人盛希泰，跨界投资人林依轮对参与节目的近百个创业项目进行了精彩点评，项目涉足TMT、智能硬件、大医疗、影视娱乐等多个行业类别。同时，节目的前期海选得到了篮球明星姚明、SOHO中国董事长潘石屹先生等各界人士的大力支持。</p>
+    <p>《一块投吧》节目在业界受到了广泛的关注，播出后反响热烈，很多观众把《一块投吧》作为创业投资的课堂。由此，节目出品方——向日葵传媒发起成立一块投吧投资学院，让更多企业家有机会深入学习，全面了解创业投资新生态，转型成为创而优则投的新一代企业家。</p>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="title">一块投吧投资学院</p>
+            <p>邮箱 ：QIHAJING@XRKMEDIA.COM<p>
+            <p>电话 ：010-53672297   17338132122</p>
+        </div>
+        <div class="col-md-6">
+            <p class="title">商务合作／广告</p>
+            <p>邮箱 ：QIHAJING@XRKMEDIA.COM</p>
+            <p>电话 ：010-53672297   17338132122</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="title">报名地点</p>
+    <p>北京·望京 SOHO<p>
+
+    <div id="map">
+	<!--百度地图容器-->
+	<div style="width:100%;height:550px;border: 1px solid #979797; border-radius: 1px; margin-top: 20px;" id="dituContent"></div>
+    </div>
+
+</div>
+
+<%block name="js">
+<script type="text/javascript">
+	//创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addRemark();//向地图中添加文字标注
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.486843,40.003239);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.disableKeyboard();//禁用键盘上下左右键移动地图，默认禁用(可不写)
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+                        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+//文字标注数组
+    var lbPoints = [{point:"116.486097|40.002755",content:"报名处"}
+         ];
+    //向地图中添加文字标注函数
+    function addRemark(){
+        for(var i=0;i<lbPoints.length;i++){
+            var json = lbPoints[i];
+            var p1 = json.point.split("|")[0];
+            var p2 = json.point.split("|")[1];
+            var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+            map.addOverlay(label);
+            label.setStyle({borderColor:"#999"});
+        }
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</%block>

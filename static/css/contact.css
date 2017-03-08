@@ -1,0 +1,54 @@
+.main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main p {
+    font-size: 16px;
+    color: #141414;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin: 0 0 5px;
+}
+
+.main p.title {
+    font-size: 18px;
+    color: #323232;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.main hr {
+    margin-top: 37px;
+    margin-bottom: 40px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.main #map {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .main{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main #map {
+        display: inherit;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .main #map {
+        display: inherit;
+    }
+}

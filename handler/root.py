@@ -27,3 +27,9 @@ class Notice(BaseHandler):
 class Course(BaseHandler):
     def get(self):
         self.render()
+
+
+@route('/contact')
+class Contact(BaseHandler):
+    def get(self):
+        self.render()

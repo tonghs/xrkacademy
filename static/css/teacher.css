@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main .item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main .item .avatar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.main .item .title {
+    float: left;
+    margin-left: 20px;
+}
+
+.main .item .title .name {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .main{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main .item {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .main .item .avatar {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 130px;
+        height: 130px;
+        float: left;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .main .item {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .main .item .avatar {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 130px;
+        height: 130px;
+        float: left;
+    }
+}

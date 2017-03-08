@@ -33,3 +33,9 @@ class Course(BaseHandler):
 class Contact(BaseHandler):
     def get(self):
         self.render()
+
+
+@route('/teacher')
+class Teacher(BaseHandler):
+    def get(self):
+        self.render()

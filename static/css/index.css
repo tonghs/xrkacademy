@@ -70,7 +70,6 @@ div#teacher-wrapper .avatar {
 }
 
 .team-intro-wrapper .col-md-4, div.team-intro-wrapper .container {
-    padding: 0;
 }
 
 .team-img {
@@ -118,6 +117,24 @@ div#teacher-wrapper .avatar {
 
 .img-wrapper {
     margin-top: 30px;
+}
+
+.partner {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.partner .corp {
+    margin-bottom: 20px;
+}
+
+.partner img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.partner hr {
+    margin: 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -274,6 +291,24 @@ div#teacher-wrapper .avatar {
     .img-wrapper .col-md-3 {
         padding: 0;
     }
+
+    .partner {
+        margin-top: 30px;
+    }
+
+    .partner img{
+        width: 100px;
+        margin: 10px 0;
+    }
+
+    .partner hr {
+        margin: 20px 0;
+    }
+
+    .partner .media_ {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -410,4 +445,22 @@ div#teacher-wrapper .avatar {
     .img-wrapper .col-md-3 {
         padding: 0;
     }
+
+    .partner {
+        margin-top: 60px;
+    }
+
+    .partner img {
+        width: 150px;
+        margin: 0;
+    }
+
+    .partner hr {
+        margin: 20px 0;
+    }
+
+    .partner .media_ {
+        margin-bottom: 10px;
+    }
+
 }

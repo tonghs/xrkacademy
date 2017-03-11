@@ -1,3 +1,11 @@
+.course {
+    background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-11-course.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 300px;
+    margin-bottom: 50px;
+}
 @media (min-width: 1200px) {
     .left {
         width: 270px;

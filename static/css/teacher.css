@@ -20,6 +20,7 @@ body {
     width: 90px;
     height: 90px;
     float: left;
+    margin-bottom: 10px;
 }
 
 .main .item .title {
@@ -51,6 +52,7 @@ body {
         width: 130px;
         height: 130px;
         float: left;
+        margin-bottom: 0px;
     }
 
 }
@@ -74,5 +76,6 @@ body {
         width: 130px;
         height: 130px;
         float: left;
+        margin-bottom: 0;
     }
 }

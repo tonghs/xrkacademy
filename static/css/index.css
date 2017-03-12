@@ -137,6 +137,34 @@ div#teacher-wrapper .avatar {
     margin: 10px 0;
 }
 
+.video-wrapper {
+    margin-top: 30px;
+}
+
+.video-wrapper .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.video-wrapper .bg a {
+    display: block;
+    height: 80px;
+    height: 80px;
+    background-image: url(http://om579s1ws.bkt.clouddn.com/play-hover.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    margin: auto;
+    height: 200px;
+}
+
+.video-wrapper .bg a:hover {
+    background-image: url(http://om579s1ws.bkt.clouddn.com/play-hover.svg);
+}
+
+
 @media (min-width: 768px) {
     .container {
         width: 750px;

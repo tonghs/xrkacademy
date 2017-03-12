@@ -2,6 +2,7 @@
 <%block name="title">首页 – </%block>
 <%block name="css">
 	<link rel="stylesheet" href="${STATIC.css('index.css')}">
+    <link href="${STATIC.js('lib/fancybox/jquery.fancybox.min.css')}" rel="stylesheet">
 </%block>
 
 <div id="banner">
@@ -100,6 +101,46 @@
     </div>
 </div>
 
+
+## http://om579s1ws.bkt.clouddn.com/2017-03-12-yugao.png
+
+<div class="video-wrapper container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="bg" style="background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-12-piantou.png);">
+                <a class="" data-fancybox="modal" data-src="#piantou" href="javascript:;">&nbsp;</a>
+            </div>
+            <div id="piantou" style="display: none;">
+                <video controls="" name="media">
+                    <source src="http://xueyuan.yikuaitouba.com/static/video/piantou.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="bg" style="background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-12-yugao.png);">
+                <a class="" data-fancybox="modal" data-src="#yugao" href="javascript:;">&nbsp;</a>
+            </div>
+            <div id="yugao" style="display: none;">
+                <video controls="" name="media">
+                    <source src="http://xueyuan.yikuaitouba.com/static/video/yugao.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="bg" style="background-image: url(http://om579s1ws.bkt.clouddn.com/2017-03-12-piantou.png);">
+                <a class="" data-fancybox="modal" data-src="#piantou" href="javascript:;">&nbsp;</a>
+            </div>
+            <div id="piantou" style="display: none;">
+                <video controls="" name="media">
+                    <source src="http://xueyuan.yikuaitouba.com/static/video/piantou.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="img-wrapper container-fluid">
     <div class="row">
         <div class="col-md-3">
@@ -177,3 +218,8 @@
         </div>
     </div>
 </div>
+
+<%block name="js">
+    <script src="${STATIC.js('lib/fancybox/jquery.fancybox.min.js')}"></script>
+    <script src="${STATIC.js('index.js')}"></script>
+</%block>
